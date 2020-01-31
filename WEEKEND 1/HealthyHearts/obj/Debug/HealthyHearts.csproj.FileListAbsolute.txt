@@ -1,0 +1,6 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\bin\Debug\HealthyHearts.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\bin\Debug\HealthyHearts.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\bin\Debug\HealthyHearts.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\obj\Debug\HealthyHearts.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\obj\Debug\HealthyHearts.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\HealthyHearts\obj\Debug\HealthyHearts.pdb

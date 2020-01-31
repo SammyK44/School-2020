@@ -1,0 +1,6 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\bin\Debug\SummativeSums.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\bin\Debug\SummativeSums.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\bin\Debug\SummativeSums.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\obj\Debug\SummativeSums.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\obj\Debug\SummativeSums.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\SummativeSums\obj\Debug\SummativeSums.pdb

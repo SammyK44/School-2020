@@ -1,0 +1,6 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\bin\Debug\DogGenetics.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\bin\Debug\DogGenetics.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\bin\Debug\DogGenetics.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\obj\Debug\DogGenetics.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\obj\Debug\DogGenetics.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 1\DogGenetics\obj\Debug\DogGenetics.pdb
