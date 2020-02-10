@@ -1,0 +1,5 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 2\Battleship2019\BattleShip.BLL\bin\Debug\BattleShip.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 2\Battleship2019\BattleShip.BLL\bin\Debug\BattleShip.BLL.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 2\Battleship2019\BattleShip.BLL\obj\Debug\BattleShip.BLL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 2\Battleship2019\BattleShip.BLL\obj\Debug\BattleShip.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 2\Battleship2019\BattleShip.BLL\obj\Debug\BattleShip.BLL.pdb

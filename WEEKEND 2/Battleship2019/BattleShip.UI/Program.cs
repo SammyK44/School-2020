@@ -50,7 +50,9 @@ namespace BattleShip.UI
                 int placedCount = 0;
                 while (placedCount != 2)
                 {
+                    Console.Clear();
                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
+                    
                     if (currentTurn == 0)
                     {
                         ShipPlacerPrompt(p1Board);
@@ -60,13 +62,16 @@ namespace BattleShip.UI
                         ShipPlacerPrompt(p2Board);
                     }
                     placedCount = (placedCount + 1);
-                    Console.Clear();
                 }
+                Console.Clear();
 
                 //7. Show shot history, yellow "M" for miss, red "H" for hit. Prompt for coordinate entry.
                 //Validate entry. If valid, create coordinate object, convert letter to number, call opponent board's FireShot().
                 //Retrieve response from FireShot method and display corrosponding message.
                 //Clear screen & loop back.
+
+                currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
+
                 bool winner = false;
 
                 while (winner == false)
@@ -79,6 +84,7 @@ namespace BattleShip.UI
                         {
                             BoardPrinter(p2Board);
                             Console.WriteLine();
+                            Console.WriteLine("Choose where to fire.");
                             FireShotResponse response = p2Board.FireShot(Coordinator());
                             switch (response.ShotStatus)
                             {
@@ -91,18 +97,21 @@ namespace BattleShip.UI
                                     break;
                                 case ShotStatus.Miss:
                                     Console.WriteLine("Miss...");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
                                     break;
                                 case ShotStatus.Hit:
                                     Console.WriteLine("It's a hit!");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
                                     break;
                                 case ShotStatus.HitAndSunk:
                                     Console.WriteLine("You sunk the enemy " + response.ShipImpacted + "!");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
@@ -122,6 +131,7 @@ namespace BattleShip.UI
                         {
                             BoardPrinter(p1Board);
                             Console.WriteLine();
+                            Console.WriteLine("Choose where to fire.");
                             FireShotResponse response = p1Board.FireShot(Coordinator());
                             switch (response.ShotStatus)
                             {
@@ -134,18 +144,21 @@ namespace BattleShip.UI
                                     break;
                                 case ShotStatus.Miss:
                                     Console.WriteLine("Miss...");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
                                     break;
                                 case ShotStatus.Hit:
                                     Console.WriteLine("It's a hit!");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
                                     break;
                                 case ShotStatus.HitAndSunk:
                                     Console.WriteLine("You sunk the enemy " + response.ShipImpacted + "!");
+                                    Console.ReadLine();
                                     valid = true;
                                     Console.Clear();
                                     currentTurn = TurnSwitcher(currentTurn, p1Name, p2Name);
@@ -191,7 +204,7 @@ namespace BattleShip.UI
             int numberX;
             int Y;
 
-            Console.WriteLine("Where one the letter line (A-J)?");
+            Console.WriteLine("Where on the letter line (A-J)?");
 
             while (true)
             {
@@ -296,9 +309,10 @@ namespace BattleShip.UI
             Coordinate coordinate = Coordinator();
             request.Coordinate = coordinate;
 
-            Console.WriteLine("Which direction would you like to place the ship?");
             while (true)
             {
+                Console.WriteLine("Which direction would you like to place the ship?");
+                
                 while (true)
                 {
                     string shipDirection = Console.ReadLine();
@@ -378,12 +392,22 @@ namespace BattleShip.UI
 
         static void BoardPrinter(Board board)
         {
-            for (int i = 1; i < 10; i++)
+            Console.WriteLine("   | A || B || C || D || E || F || G || H || I || J |");
+
+            for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("   | A || B || C || D || E || F || G || H || I || J |");
                 Console.WriteLine("---|-------------------------------------------------");
-                Console.WriteLine(" " + i + " ");
-                for (int j = 1; j < 10; j++)
+
+                if (i < 10)
+                {
+                    Console.Write(" " + i + " ");
+                }
+                else
+                {
+                    Console.Write("10 ");
+                }
+
+                for (int j = 1; j <= 10; j++)
                 {
                     Coordinate coordinate = new Coordinate(j, i);
                     ShotHistory shot = board.CheckCoordinate(coordinate);
@@ -409,6 +433,7 @@ namespace BattleShip.UI
 
                     Console.Write(" ]");
                 }
+                Console.WriteLine("");
             }
         }
     }
