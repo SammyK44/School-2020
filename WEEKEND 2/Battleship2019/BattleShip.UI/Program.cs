@@ -13,9 +13,11 @@ namespace BattleShip.UI
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //1. Splash screen
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine(@"                                                             ");
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine(@"______  ___ _____ _____ _      _____ _____ _   _ ___________ ");
@@ -25,7 +27,10 @@ namespace BattleShip.UI
             Console.WriteLine(@"| |_/ / | | || |   | | | |____| |___/\__/ / | | |_| |_| |    ");
             Console.WriteLine(@"\____/\_| |_/\_/   \_/ \_____/\____/\____/\_| |_/\___/\_|    ");
             Console.WriteLine(@"                                                             ");
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine(@"                                                             ");
             Console.ResetColor();
+            Console.WriteLine();
 
             //2. Ask for names
             Console.WriteLine("What is Player 1's name?");
@@ -302,36 +307,36 @@ namespace BattleShip.UI
         //6. Prompt ship placement on workflow boards using coordinates & direction (Left, right, Up, Down). Clear screen after.
         static Board ShipPlacer(ShipType shipType, Board board)
         {
-            PlaceShipRequest request = new PlaceShipRequest();
-
-            request.ShipType = shipType;
-
-            Coordinate coordinate = Coordinator();
-            request.Coordinate = coordinate;
+            PlaceShipRequest request = new PlaceShipRequest
+            {
+                ShipType = shipType
+            };
 
             while (true)
             {
+                Coordinate coordinate = Coordinator();
+                request.Coordinate = coordinate;
                 Console.WriteLine("Which direction would you like to place the ship?");
                 
                 while (true)
                 {
                     string shipDirection = Console.ReadLine();
-                    if (shipDirection == "Up")
+                    if (shipDirection == "Up" || shipDirection == "up")
                     {
                         request.Direction = ShipDirection.Up;
                         break;
                     }
-                    else if (shipDirection == "Down")
+                    else if (shipDirection == "Down" || shipDirection == "down")
                     {
                         request.Direction = ShipDirection.Down;
                         break;
                     }
-                    else if (shipDirection == "Left")
+                    else if (shipDirection == "Left" || shipDirection == "left")
                     {
                         request.Direction = ShipDirection.Left;
                         break;
                     }
-                    else if (shipDirection == "Right")
+                    else if (shipDirection == "Right" || shipDirection == "right")
                     {
                         request.Direction = ShipDirection.Right;
                         break;
@@ -386,7 +391,7 @@ namespace BattleShip.UI
                 turn = 0;
                 Console.WriteLine("It's " + p1Name + "'s turn.");
             }
-            Console.ReadKey();
+            Console.ReadLine();
             return turn;
         }
 
