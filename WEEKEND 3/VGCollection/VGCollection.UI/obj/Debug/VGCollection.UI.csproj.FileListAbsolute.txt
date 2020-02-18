@@ -19,3 +19,6 @@ C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.UI\bin\Debug\VGCol
 C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.UI\bin\Debug\VGCollection.BLL.dll.config
 C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.UI\bin\Debug\VGCollection.BLL.exe.config
 C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.UI\obj\Debug\VGCollection.UI.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.UI\obj\Debug\VGCollection.UI.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.UI\obj\Debug\VGCollection.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.UI\obj\Debug\VGCollection.pdb

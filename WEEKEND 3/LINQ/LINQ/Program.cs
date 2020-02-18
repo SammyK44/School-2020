@@ -11,7 +11,7 @@ namespace LINQ
         {
             //PrintAllProducts();
             //PrintAllCustomers();
-
+            Exercise20();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
@@ -112,6 +112,7 @@ namespace LINQ
             List<Customer> list = DataLoader.LoadCustomers().Where(x => x.Region == "WA").ToList();
             foreach (Customer customer in list)
             {
+                Console.WriteLine(customer.CompanyName);
                 foreach (Order order in customer.Orders)
                 {
                     Console.WriteLine(order.OrderID);
@@ -217,7 +218,7 @@ namespace LINQ
         /// </summary>
         static void Exercise11()
         {
-            List<int> list = DataLoader.NumbersC.OrderBy(x => x % 2 == 1).ToList();
+            List<int> list = DataLoader.NumbersC.Where(x => x % 2 == 1).Take(3).ToList();
 
             foreach (int item in list)
             {
@@ -261,7 +262,7 @@ namespace LINQ
         /// </summary>
         static void Exercise14()
         {
-            List<int> numbers = DataLoader.NumbersC.TakeWhile(x => x >= 6).ToList();
+            List<int> numbers = DataLoader.NumbersC.TakeWhile(x => x < 6).ToList();
             foreach (int number in numbers)
             {
                 Console.WriteLine(number);
@@ -356,18 +357,18 @@ namespace LINQ
         {
             var list = (from Product in DataLoader.LoadProducts()
                         group Product by Product.Category into x
-                        select new { x.Key, Grouping = x}).ToList();
-            
+                        select new { x.Key, Grouping = x }).ToList();
+
             foreach (var item in list)
             {
                 Console.WriteLine(item.Key);
-                
+
                 foreach (var thing in item.Grouping)
                 {
                     Console.WriteLine(thing.ProductName);
                 }
             }
-            
+
         }
 
         //YOU'RE DONE

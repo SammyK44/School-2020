@@ -1,1 +1,8 @@
 D:\Git\Curriculum\dotnet\ObjectOrientedProgramming\03-Collections-LINQ-SystemIO-DateTime\Asssessments\LINQ\LINQ\bin\Debug\LINQ.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\bin\Debug\Customers.xml
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\bin\Debug\LINQ.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\bin\Debug\LINQ.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\bin\Debug\LINQ.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\obj\Debug\LINQ.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\obj\Debug\LINQ.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\LINQ\LINQ\obj\Debug\LINQ.pdb

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VGCollection.DAL;
 using VGCollection.BLL;
+using VGCollection.Models;
 
 namespace VGCollection.UI
 {
@@ -12,8 +12,6 @@ namespace VGCollection.UI
     {
         static void Main(string[] args)
         {
-            Handler.ReadGames();
-
             while (true)
             {
                 Console.WriteLine("What would you like to do? (create, retrieve one, retrieve all, update, delete)");
@@ -21,38 +19,63 @@ namespace VGCollection.UI
 
                 if (initial == "create")
                 {
-                    Handler.Create(PromptAllPieces());
+                    Validation.ValidateCreate(PromptAllPieces());
                     Console.WriteLine("Game created.");
                 }
                 else if (initial == "retrieve one")
                 {
-                    WriteGameToConsole(Handler.RetrieveOne(NamePrompt()));
+                    bool valid = false;
+                    Videogame game = new Videogame();
+                    while (valid == false)
+                    {
+                        game = Validation.ValidateRetrieveOne(NamePrompt());
+                        valid = Validation.ValidateGame(game);
+                        if (valid == false)
+                        {
+                            Console.WriteLine("CRITICAL ERROR: Final validation failed.");
+                        }
+                    }
+                    WriteGameToConsole(game);
                 }
                 else if (initial == "retrieve all")
                 {
-                    foreach (Videogame game in Handler.RetrieveAll())
+                    foreach (Videogame game in Validation.ValidRetreiveAll())
                     {
                         WriteGameToConsole(game);
                     }
                 }
                 else if (initial == "update")
                 {
-                    Console.WriteLine("Which game do you want to update? (Enter exact name.)");
-                    Handler.Update(NamePrompt(), PromptAllPieces());
+                    bool valid = false;
+                    while (valid == false)
+                    {
+                        Console.WriteLine("Which game do you want to update? (Enter exact name.)");
+                        valid = Validation.ValidateUpdate(NamePrompt(), PromptAllPieces());
+                        if (valid == false)
+                        {
+                            Console.WriteLine("CRITICAL ERROR: Final validation failed.");
+                        }
+                    }
                     Console.WriteLine("Updated.");
                     break;
                 }
                 else if (initial == "delete")
                 {
-                    Handler.Delete(NamePrompt());
+                    bool valid = false;
+                    while (valid == false)
+                    {
+                        valid = Validation.ValidateDelete(NamePrompt());
+                        if (valid == false)
+                        {
+                            Console.WriteLine("CRITICAL ERROR: Final validation failed.");
+                        }
+                    }
                     Console.WriteLine("Deleted.");
                 }
                 else
                 {
                     Console.WriteLine("Invalid input.");
                 }
-
-                Handler.WriteGames();
             }
         }
         public static Videogame PromptAllPieces()

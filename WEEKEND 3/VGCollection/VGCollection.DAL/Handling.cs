@@ -3,27 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VGCollection.Models;
 using System.IO;
 
 namespace VGCollection.DAL
 {
-    public class Videogame
-    {
-        public string Name { get; set; }
-        public string System { get; set; }
-        public string Genre { get; set; }
-        public string Publisher { get; set; }
-        public int Year { get; set; }
-    }
     public static class Handler
     {
         public static List<Videogame> videogames = new List<Videogame>();
         public static void Create(Videogame game)
         {
+            ReadGames();
             videogames.Add(game);
+            WriteGames();
         }
         public static Videogame RetrieveOne(string name)
         {
+            ReadGames();
             Videogame videogame = new Videogame();
             foreach (Videogame game in videogames)
             {
@@ -33,14 +29,18 @@ namespace VGCollection.DAL
                     break;
                 }
             }
+            WriteGames();
             return videogame;
         }
         public static List<Videogame> RetrieveAll()
         {
+            ReadGames();
+            WriteGames();
             return videogames;
         }
         public static void Update(string oldName, Videogame newGame)
         {
+            ReadGames();
             foreach (Videogame game in videogames)
             {
                 if (game.Name == oldName)
@@ -50,10 +50,13 @@ namespace VGCollection.DAL
                 break;
             }
             Create(newGame);
+            WriteGames();
         }
         public static void Delete(string name)
         {
+            ReadGames();
             videogames.Remove(RetrieveOne(name));
+            WriteGames();
         }
 
         //Read & write

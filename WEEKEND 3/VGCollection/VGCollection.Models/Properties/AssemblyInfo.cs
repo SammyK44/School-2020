@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VGCollection.BL")]
+[assembly: AssemblyTitle("VGCollection.Models")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VGCollection.BL")]
+[assembly: AssemblyProduct("VGCollection.Models")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("516a2585-deaa-4c9d-ad3c-9f3c1ee4af96")]
+[assembly: Guid("f3410f17-c28c-4350-b75f-bd9e3e023b95")]
 
 // Version information for an assembly consists of the following four values:
 //

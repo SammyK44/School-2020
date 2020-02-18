@@ -50,13 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VGCollection.BLL\VGCollection.DAL.csproj">
-      <Project>{655c5588-be60-46f9-8d02-e7941c9982c2}</Project>
-      <Name>VGCollection.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VGCollection.BL\VGCollection.BLL.csproj">
+    <ProjectReference Include="..\VGCollection.BLL\VGCollection.BLL.csproj">
       <Project>{516a2585-deaa-4c9d-ad3c-9f3c1ee4af96}</Project>
       <Name>VGCollection.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VGCollection.Models\VGCollection.Models.csproj">
+      <Project>{f3410f17-c28c-4350-b75f-bd9e3e023b95}</Project>
+      <Name>VGCollection.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
