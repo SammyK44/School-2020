@@ -1,0 +1,12 @@
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\bin\Debug\VGCollection.BLL.exe.config
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\bin\Debug\VGCollection.BLL.exe
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\bin\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\obj\Debug\VGCollection.BLL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\obj\Debug\VGCollection.BLL.exe
+C:\Users\Mark\Desktop\Practice Code\VGCollection.BLL\obj\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\obj\Debug\VGCollection.BLL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\obj\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\bin\Debug\VGCollection.BLL.dll.config
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\bin\Debug\VGCollection.BLL.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\bin\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\obj\Debug\VGCollection.BLL.dll

@@ -1,0 +1,17 @@
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\nunit.engine.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\nunit.engine.api.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.Tests.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.Tests.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.BLL.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.BLL.dll.config
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\VGCollection.BLL.exe.config
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\obj\Debug\VGCollection.Tests.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\obj\Debug\VGCollection.Tests.csproj.CopyComplete
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\obj\Debug\VGCollection.Tests.dll
+C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.Tests\obj\Debug\VGCollection.Tests.pdb
