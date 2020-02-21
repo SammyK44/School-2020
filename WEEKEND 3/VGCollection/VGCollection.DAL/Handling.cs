@@ -13,13 +13,10 @@ namespace VGCollection.DAL
         public static List<Videogame> videogames = new List<Videogame>();
         public static void Create(Videogame game)
         {
-            ReadGames();
             videogames.Add(game);
-            WriteGames();
         }
         public static Videogame RetrieveOne(string name)
         {
-            ReadGames();
             Videogame videogame = new Videogame();
             foreach (Videogame game in videogames)
             {
@@ -29,18 +26,14 @@ namespace VGCollection.DAL
                     break;
                 }
             }
-            WriteGames();
             return videogame;
         }
         public static List<Videogame> RetrieveAll()
         {
-            ReadGames();
-            WriteGames();
             return videogames;
         }
         public static void Update(string oldName, Videogame newGame)
         {
-            ReadGames();
             foreach (Videogame game in videogames)
             {
                 if (game.Name == oldName)
@@ -50,17 +43,14 @@ namespace VGCollection.DAL
                 break;
             }
             Create(newGame);
-            WriteGames();
         }
         public static void Delete(string name)
         {
-            ReadGames();
             videogames.Remove(RetrieveOne(name));
-            WriteGames();
         }
 
         //Read & write
-        public static string path = @"C:\Users\Mark\Desktop\Practice Code\VGCollection\VGCollection.BLL\List.txt";
+        public static string path = @"List.txt";
 
         public static string GameToString(Videogame game)
         {
@@ -77,6 +67,11 @@ namespace VGCollection.DAL
         }
         public static void ReadGames()
         {
+            videogames.Clear();
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
             string[] lines = File.ReadAllLines(path);
             foreach (string line in lines)
             {

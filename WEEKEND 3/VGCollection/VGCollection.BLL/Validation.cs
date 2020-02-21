@@ -13,6 +13,7 @@ namespace VGCollection.BLL
         public static bool NameValidator(string input)
         {
             bool valid = false;
+            Handler.ReadGames();
             foreach (Videogame game in Handler.RetrieveAll())
             {
                 if (game.Name == input)
@@ -20,53 +21,66 @@ namespace VGCollection.BLL
                     valid = true;
                 }
             }
+            Handler.WriteGames();
             return valid;
         }
         public static bool StringValidator(string input)
         {
             bool valid = true;
+            Handler.ReadGames();
             if (string.IsNullOrEmpty(input) || input.Contains('~'))
             {
                 valid = false;
             }
+            Handler.WriteGames();
             return valid;
         }
         public static bool IntValidator(string input)
         {
             bool valid = true;
+            Handler.ReadGames();
             if (string.IsNullOrEmpty(input) || !int.TryParse(input, out _))
             {
                 valid = false;
             }
+            Handler.WriteGames();
             return valid;
         }
         public static bool ValidateCreate(Videogame game)
         {
+            Handler.ReadGames();
             bool valid = ValidateGame(game);
 
             if (valid == true)
             {
                 Handler.Create(game);
             }
+            Handler.WriteGames();
             return valid;
         }
         public static Videogame ValidateRetrieveOne(string input)
         {
+            Handler.ReadGames();
             Videogame game = new Videogame();
             bool valid = NameValidator(input);
             if (valid == true)
             {
                 game = Handler.RetrieveOne(input);
             }
-            //Else indicate that it's invalid.
+            Handler.WriteGames();
+            //Will be coupled with ValidateGame() to complete validation.
+            ///ValidateGame(ValidateRetrieveOne(input))
             return game;
         }
         public static List<Videogame> ValidRetreiveAll()
         {
+            Handler.ReadGames();
+            Handler.WriteGames();
             return Handler.RetrieveAll();
         }
         public static bool ValidateUpdate(string oldName, Videogame game)
         {
+            Handler.ReadGames();
             bool validName = NameValidator(oldName);
             bool validGame = ValidateGame(game);
             bool overallValidity = false;
@@ -75,24 +89,27 @@ namespace VGCollection.BLL
                 overallValidity = true;
                 Handler.Update(oldName, game);
             }
+            Handler.WriteGames();
             return overallValidity;
         }
         public static bool ValidateDelete(string input)
         {
+            Handler.ReadGames();
             bool valid = NameValidator(input);
             if (valid == true)
             {
                 Handler.Delete(input);
             }
+            Handler.WriteGames();
             return valid;
         }
         public static bool ValidateGame(Videogame game)
         {
             bool valid = true;
-            if (game.Name == "" || game.Name.Contains('~') ||
-                game.Genre == "" || game.Genre.Contains('~') ||
-                game.Publisher == "" || game.Publisher.Contains('~') ||
-                game.System == "" || game.System.Contains('~'))
+            if (string.IsNullOrEmpty(game.Name) || game.Name.Contains('~') ||
+                string.IsNullOrEmpty(game.Genre) || game.Genre.Contains('~') ||
+                string.IsNullOrEmpty(game.Publisher) || game.Publisher.Contains('~') ||
+                string.IsNullOrEmpty(game.System) || game.System.Contains('~'))
             {
                 valid = false;
             }

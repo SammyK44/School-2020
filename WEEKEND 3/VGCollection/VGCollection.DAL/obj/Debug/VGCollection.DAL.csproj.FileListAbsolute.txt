@@ -1,0 +1,9 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\bin\Debug\VGCollection.BLL.dll.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\bin\Debug\VGCollection.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\bin\Debug\VGCollection.BLL.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\bin\Debug\VGCollection.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\bin\Debug\VGCollection.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\obj\Debug\VGCollection.DAL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\obj\Debug\VGCollection.DAL.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\obj\Debug\VGCollection.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.DAL\obj\Debug\VGCollection.BLL.pdb

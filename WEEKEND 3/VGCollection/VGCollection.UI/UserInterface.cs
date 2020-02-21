@@ -16,10 +16,18 @@ namespace VGCollection.UI
             {
                 Console.WriteLine("What would you like to do? (create, retrieve one, retrieve all, update, delete)");
                 string initial = Console.ReadLine();
-
+                initial = initial.ToLower();
                 if (initial == "create")
                 {
-                    Validation.ValidateCreate(PromptAllPieces());
+                    bool valid = false;
+                    while (valid == false)
+                    {
+                        valid = Validation.ValidateCreate(PromptAllPieces());
+                        if (valid == false)
+                        {
+                            Console.WriteLine("CRITICAL ERROR: Final validation failed.");
+                        }
+                    }
                     Console.WriteLine("Game created.");
                 }
                 else if (initial == "retrieve one")
@@ -50,14 +58,16 @@ namespace VGCollection.UI
                     while (valid == false)
                     {
                         Console.WriteLine("Which game do you want to update? (Enter exact name.)");
-                        valid = Validation.ValidateUpdate(NamePrompt(), PromptAllPieces());
+                        string name = NamePrompt();
+                        Console.WriteLine("Enter the updated information.");
+                        Videogame game = PromptAllPieces();
+                        valid = Validation.ValidateUpdate(name, game);
                         if (valid == false)
                         {
                             Console.WriteLine("CRITICAL ERROR: Final validation failed.");
                         }
                     }
                     Console.WriteLine("Updated.");
-                    break;
                 }
                 else if (initial == "delete")
                 {
@@ -95,7 +105,7 @@ namespace VGCollection.UI
             Console.WriteLine("Enter the game's year of release.");
             int year = NumberPrompt();
 
-            return new Videogame { Name = name, Genre = genre, System = system, Publisher = publisher, Year = year};
+            return new Videogame { Name = name, Genre = genre, System = system, Publisher = publisher, Year = year };
         }
         public static string StringPrompt()
         {
@@ -122,7 +132,7 @@ namespace VGCollection.UI
             while (valid == false)
             {
                 input = Console.ReadLine();
-                valid = Validation.StringValidator(input);
+                valid = Validation.IntValidator(input);
                 if (valid == false)
                 {
                     Console.WriteLine("Invalid input.");

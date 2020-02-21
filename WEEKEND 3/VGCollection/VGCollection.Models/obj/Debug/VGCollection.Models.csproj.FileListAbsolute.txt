@@ -1,0 +1,5 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.Models\bin\Debug\VGCollection.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.Models\bin\Debug\VGCollection.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.Models\obj\Debug\VGCollection.Models.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.Models\obj\Debug\VGCollection.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 3\VGCollection\VGCollection.Models\obj\Debug\VGCollection.Models.pdb
