@@ -1,0 +1,8 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\bin\Debug\SGBank.Data.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\bin\Debug\SGBank.Data.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\bin\Debug\SGBank.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\bin\Debug\SGBank.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\obj\Debug\SGBank.Data.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\obj\Debug\SGBank.Data.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\obj\Debug\SGBank.Data.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Data\obj\Debug\SGBank.Data.pdb

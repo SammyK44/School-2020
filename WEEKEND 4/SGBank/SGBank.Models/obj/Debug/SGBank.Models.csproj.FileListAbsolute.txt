@@ -1,0 +1,5 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Models\bin\Debug\SGBank.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Models\bin\Debug\SGBank.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Models\obj\Debug\SGBank.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.Models\obj\Debug\SGBank.Models.pdb

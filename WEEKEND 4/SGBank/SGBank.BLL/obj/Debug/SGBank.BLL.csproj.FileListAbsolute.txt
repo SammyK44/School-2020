@@ -1,0 +1,10 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.BLL.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.Data.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.Data.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\bin\Debug\SGBank.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 4\SGBank\SGBank.BLL\obj\Debug\SGBank.BLL.pdb
