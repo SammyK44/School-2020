@@ -1,0 +1,10 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.BLL.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.Data.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.Data.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\bin\Debug\FlooringOrders.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\obj\Debug\FlooringOrders.BLL.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\obj\Debug\FlooringOrders.BLL.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\obj\Debug\FlooringOrders.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.BLL\obj\Debug\FlooringOrders.BLL.pdb

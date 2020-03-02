@@ -1,0 +1,5 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.Models\bin\Debug\FlooringOrders.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.Models\bin\Debug\FlooringOrders.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.Models\obj\Debug\FlooringOrders.Models.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.Models\obj\Debug\FlooringOrders.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.Models\obj\Debug\FlooringOrders.Models.pdb

@@ -1,0 +1,13 @@
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.UI.exe.config
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.UI.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.UI.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.Models.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.Models.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\obj\Debug\FlooringOrders.UI.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\obj\Debug\FlooringOrders.UI.csproj.CopyComplete
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\obj\Debug\FlooringOrders.UI.exe
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\obj\Debug\FlooringOrders.UI.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.BLL.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.Data.dll
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.BLL.pdb
+C:\Users\Mark\Desktop\2020 Repos\School-2020\WEEKEND 5\FlooringOrders\FlooringOrders.UI\bin\Debug\FlooringOrders.Data.pdb
