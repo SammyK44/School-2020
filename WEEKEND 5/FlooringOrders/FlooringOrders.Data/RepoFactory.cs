@@ -20,7 +20,7 @@ namespace FlooringOrders.Data
                 case "File":
                     return new OrderManager(new OrderRepository());
                 case "DataBase":
-                    throw new NotImplementedException("Components for DataBase not complete. Replace this exception code line when done.");
+                    return new OrderManager(new OrderDatabaseRepository());
                 default:
                     throw new Exception("Mode value in app config is not valid");
             }
@@ -34,7 +34,7 @@ namespace FlooringOrders.Data
                 case "File":
                     return new ProductManager(new ProductRepository());
                 case "DataBase":
-                    throw new NotImplementedException("Components for DataBase not complete. Replace this exception code line when done.");
+                    return new ProductManager(new ProductDatabaseRepository());
                 default:
                     throw new Exception("Mode value in app config is not valid");
             }
@@ -48,7 +48,7 @@ namespace FlooringOrders.Data
                 case "File":
                     return new TaxManager(new TaxRepository());
                 case "DataBase":
-                    throw new NotImplementedException("Components for DataBase not complete. Replace this exception code line when done.");
+                    return new TaxManager(new TaxDatabaseRepository());
                 default:
                     throw new Exception("Mode value in app config is not valid");
             }
