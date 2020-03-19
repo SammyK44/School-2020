@@ -55,8 +55,6 @@ function attemptSearch() {
 
   if ($("#termSearchBox").val().trim().length && $("#categoryDropdown").val() ) {
 
-    alert($("#termSearchBox").val());
-    alert($("#categoryDropdown").val());
   $.ajax({
     type: "GET",
     url: "http://localhost:8080/dvds/" + $("#categoryDropdown").val() + "/" + $("#termSearchBox").val(),
