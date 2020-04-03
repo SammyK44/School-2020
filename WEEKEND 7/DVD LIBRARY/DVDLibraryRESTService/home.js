@@ -15,7 +15,7 @@ $(document).ready(function () {
 function loadTable() {
   $.ajax({
     type: "GET",
-    url: "http://localhost:8080/dvds",
+    url: "https://localhost:44381/dvds",
     dataType: "json",
 
     success: function (dvds) {
@@ -27,12 +27,12 @@ function loadTable() {
       // Append to the table.
 
       $.each(dvds, function(index, dvd) {
-        var dvdRow = `<tr style="text-align:center;" class="dvdTableRow" id="row${dvd.dvdId}">`;
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.title + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.realeaseYear + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.director + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.rating + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.dvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.dvdId})">Delete</button></td>`;
+        var dvdRow = `<tr style="text-align:center;" class="dvdTableRow" id="row${dvd.DvdId}">`;
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Title + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.RealeaseYear + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Director + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Rating + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.DvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.DvdId})">Delete</button></td>`;
             dvdRow += "</tr>";
 
         table.append(dvdRow);
@@ -57,14 +57,14 @@ function attemptSearch() {
 
   $.ajax({
     type: "GET",
-    url: "http://localhost:8080/dvds/" + $("#categoryDropdown").val() + "/" + $("#termSearchBox").val(),
+    url: "https://localhost:44381/dvds/" + $("#categoryDropdown").val() + "/" + $("#termSearchBox").val(),
     dataType: "json",
     data: JSON.stringify({
-      title: $("#newTitle").val(),
-      releaseYear: $("#newYear").val(),
-      director: $("#newDirector").val(),
-      rating: $("#newRating").val(),
-      notes: $("#newNotes").val()
+      Title: $("#newTitle").val(),
+      RealeaseYear: $("#newYear").val(),
+      Director: $("#newDirector").val(),
+      Rating: $("#newRating").val(),
+      Notes: $("#newNotes").val()
     }),
     headers: {
       "Accept": "application/json",
@@ -80,12 +80,12 @@ function attemptSearch() {
       // Append to the table.
 
       $.each(dvds, function(index, dvd) {
-        var dvdRow = `<tr style="text-align:center;" class="dvdTableRow" id="row${dvd.dvdId}">`;
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.title + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.realeaseYear + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.director + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.rating + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.dvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.dvdId})">Delete</button></td>`;
+        var dvdRow = `<tr style="text-align:center;" class="dvdTableRow" id="row${dvd.DvdId}">`;
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Title + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.RealeaseYear + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Director + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Rating + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.DvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.DvdId})">Delete</button></td>`;
             dvdRow += "</tr>";
 
         table.append(dvdRow);
@@ -120,14 +120,14 @@ function attemptSearch() {
 
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/dvd",
+      url: "https://localhost:44381/dvd",
       dataType: "json",
       data: JSON.stringify({
-        title: $("#newTitle").val(),
-        realeaseYear: $("#newYear").val(),
-        director: $("#newDirector").val(),
-        rating: $("#newRating").val(),
-        notes: $("#newNotes").val()
+        Title: $("#newTitle").val(),
+        RealeaseYear: $("#newYear").val(),
+        Director: $("#newDirector").val(),
+        Rating: $("#newRating").val(),
+        Notes: $("#newNotes").val()
       }),
       headers: {
         "Accept": "application/json",
@@ -138,12 +138,12 @@ function attemptSearch() {
         var table = $("#dvdTable");
 
         // Append to the table.
-        var dvdRow = `<tr style="text-align:center;" id="row${dvd.dvdId}" class="newTableRow">`;
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.title + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.realeaseYear + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.director + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row">` + dvd.rating + "</td>";
-            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.dvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.dvdId})">Delete</button></td>`;
+        var dvdRow = `<tr style="text-align:center;" id="row${dvd.DvdId}" class="newTableRow">`;
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Title + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.RealeaseYear + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Director + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row">` + dvd.Rating + "</td>";
+            dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.DvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.DvdId})">Delete</button></td>`;
             dvdRow += "</tr>";
 
         table.append(dvdRow);
@@ -173,21 +173,21 @@ function attemptSearch() {
       // form on success
       $.ajax({
           type: 'GET',
-          url: 'http://localhost:8080/dvd/' + dvdId,
+          url: 'https://localhost:44381/dvd/' + dvdId,
           success: function(data, status) {
-                $('#newTitle').val(data.title);
-                $('#newYear').val(data.realeaseYear);
-                $('#newDirector').val(data.director);
-                $('#newRating').val(data.rating);
-                $('#newNotes').val(data.notes);
+                $('#newTitle').val(data.Title);
+                $('#newYear').val(data.RealeaseYear);
+                $('#newDirector').val(data.Director);
+                $('#newRating').val(data.Rating);
+                $('#newNotes').val(data.Notes);
 
                 //Show elements
-                $("#editHeader").text("Edit DVD: " + data.title);
+                $("#editHeader").text("Edit DVD: " + data.Title);
                 $("#editHeader").show();
                 $("#modifyDvdMenu").show();
 
                 //set value of editDVDfinal
-                $("#editDVDfinal").val(data.dvdId);
+                $("#editDVDfinal").val(data.DvdId);
             },
             error: function() {
               alert("FAILURE! Couldn't display edit form.");
@@ -217,14 +217,14 @@ function editDVDsec() {
 
     $.ajax({
        type: 'PUT',
-       url: 'http://localhost:8080/dvd/' + $('#editDVDfinal').val(),
+       url: 'https://localhost:44381/dvd/' + $('#editDVDfinal').val(),
        data: JSON.stringify({
-         dvdId: $('#editDVDfinal').val(),
-         title: $("#newTitle").val(),
-         realeaseYear: $("#newYear").val(),
-         director: $("#newDirector").val(),
-         rating: $("#newRating").val(),
-         notes: $("#newNotes").val()
+         DvdId: $('#editDVDfinal').val(),
+         Title: $("#newTitle").val(),
+         RealeaseYear: $("#newYear").val(),
+         Director: $("#newDirector").val(),
+         Rating: $("#newRating").val(),
+         Notes: $("#newNotes").val()
        }),
        headers: {
          'Accept': 'application/json',
@@ -235,7 +235,7 @@ function editDVDsec() {
 
          $.ajax({
            type: "GET",
-           url: "http://localhost:8080/dvds",
+           url: "https://localhost:44381/dvds",
            dataType: "json",
 
            success: function (dvds) {
@@ -248,12 +248,12 @@ function editDVDsec() {
 
            $.each(dvds, function(index, dvd) {
          // Append to the table.
-         var dvdRow = `<tr style="text-align:center;" id="row${dvd.dvdId}" class="newTableRow">`;
-             dvdRow += `<td class="rowPiece" scope="row">` + dvd.title + "</td>";
-             dvdRow += `<td class="rowPiece" scope="row">` + dvd.realeaseYear + "</td>";
-             dvdRow += `<td class="rowPiece" scope="row">` + dvd.director + "</td>";
-             dvdRow += `<td class="rowPiece" scope="row">` + dvd.rating + "</td>";
-             dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.dvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.dvdId})">Delete</button></td>`;
+         var dvdRow = `<tr style="text-align:center;" id="row${dvd.DvdId}" class="newTableRow">`;
+             dvdRow += `<td class="rowPiece" scope="row">` + dvd.Title + "</td>";
+             dvdRow += `<td class="rowPiece" scope="row">` + dvd.RealeaseYear + "</td>";
+             dvdRow += `<td class="rowPiece" scope="row">` + dvd.Director + "</td>";
+             dvdRow += `<td class="rowPiece" scope="row">` + dvd.Rating + "</td>";
+             dvdRow += `<td class="rowPiece" scope="row"><button onclick="showEditForm(${dvd.DvdId})">Edit</button>` + " | " + `<button class="deleteButton" onclick="promptDelete(${dvd.DvdId})">Delete</button></td>`;
              dvdRow += "</tr>";
 
          table.append(dvdRow);
@@ -293,7 +293,7 @@ function editDVDsec() {
 
       $.ajax({
       type: 'DELETE',
-      url: 'http://localhost:8080/dvd/' + id,
+      url: 'https://localhost:44381/dvd/' + id,
     });
       $(`#row${id}`).hide();
     };
